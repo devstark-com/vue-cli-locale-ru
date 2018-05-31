@@ -1,0 +1,21 @@
+{
+  "name": "vue-cli-locale-ru",
+  "version": "0.0.2",
+  "description": "Russian localization for @vue/cli",
+  "unpkg": "./locales/ru.json",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devstark-com/vue-cli-locale-ru.git"
+  },
+  "keywords": [
+    "vuejs",
+    "vue-cli",
+    "locale"
+  ],
+  "author": "Refat <nobilix@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devstark-com/vue-cli-locale-ru/issues"
+  },
+  "homepage": "https://github.com/devstark-com/vue-cli-locale-ru/#readme"
+}

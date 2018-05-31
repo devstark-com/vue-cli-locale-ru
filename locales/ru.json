@@ -1,0 +1,487 @@
+{
+  "components": {
+    "connection-status": {
+      "disconnected": "Отключен от UI сервера",
+      "connected": "Подключен!"
+    },
+    "file-diff": {
+      "binary": "Бинарный файл не показан",
+      "actions": {
+        "open": "Открыть в редакторе"
+      }
+    },
+    "file-diff-view": {
+      "files-changed": "Измененные файлы",
+      "search-file": "Найти файл",
+      "empty": "Изменения не обнаружены",
+      "modals": {
+        "commit": {
+          "title": "Commit changes",
+          "input": "Enter a commit message",
+          "subtitle": "Record changes to the repository",
+          "actions": {
+            "commit": "Commit",
+            "cancel": "Отменить"
+          }
+        }
+      },
+      "actions": {
+        "collapse-all": "Свернуть все",
+        "expand-all": "Развернуть все",
+        "commit": "Commit changes",
+        "skip": "Пропустить",
+        "continue": "Продолжить",
+        "refresh": "Обновить"
+      }
+    },
+    "folder-explorer": {
+      "toolbar": {
+        "tooltips": {
+          "parent-folder": "Open parent folder",
+          "edit-path": "Редактировать путь",
+          "favorite": "Добавить/убрать в избранное",
+          "favorite-folders": "Избранные папки",
+          "refresh": "Обновить"
+        },
+        "placeholder": "Введите полный путь к папке",
+        "empty": "Пока нет избранных папок."
+      }
+    },
+    "list-item-info": {
+      "more-info": "Подробнее"
+    },
+    "logger-view": {
+      "title": "Логи",
+      "empty": "Пока нет логов",
+      "buttons": {
+        "clear": "Очистить логи",
+        "scroll": "Прокрутить вниз",
+        "close": "Закрыть"
+      }
+    },
+    "progress-screen": {
+      "close": "Закрыть"
+    },
+    "project-nav": {
+      "tooltips": {
+        "plugins": "Плагины",
+        "configuration": "Конфигурация",
+        "tasks": "Задачи",
+        "more": "Еще"
+      }
+    },
+    "project-select-list": {
+      "empty": "Нет проектов",
+      "titles": {
+        "favorite": "Избранные проекты",
+        "other": "Другие проекты"
+      }
+    },
+    "project-select-list-item": {
+      "tooltips": {
+        "favorite": "Добавить/убрать в избранное",
+        "delete": "Удалить"
+      }
+    },
+    "project-plugin-item": {
+      "version": "версия",
+      "latest": "последняя",
+      "official": "Официальный",
+      "installed": "Установлен",
+      "actions": {
+        "update": "Обновить {target}"
+      }
+    },
+    "prompt-list": {
+      "default": "По-умолчанию"
+    },
+    "prompts-list": {
+      "empty": "Нет конфигурации"
+    },
+    "status-bar": {
+      "project": {
+        "tooltip": "Текущий проект<br><i>Вкл/выкл. текущий проект</i>",
+        "empty": "Нет проектов"
+      },
+      "path": {
+        "tooltip": "Текущая рабочая папка"
+      },
+      "log": {
+        "tooltip": "Логи<br><i>Вкл/выкл. Vue CLI логи</i>",
+        "empty": "No logs yet"
+      },
+      "report-bug": "Сообщить об ошибке",
+      "translate": "Помочь перевести"
+    },
+    "terminal-view": {
+      "buttons": {
+        "clear": "Очистить консоль",
+        "scroll": "Прокрутить вниз"
+      }
+    },
+    "top-bar": {
+      "no-favorites": "Нет избранных проектов"
+    },
+    "view-badge": {
+      "labels": {
+        "tasks": {
+          "error": "Error status",
+          "running": "Running status",
+          "done": "Done status"
+        }
+      }
+    }
+  },
+  "mixins": {
+    "progress": {
+      "creating": "Создаем проект...",
+      "git-init": "Инициализируем git репозиторий...",
+      "plugins-install": "Устанавливаем Vue CLI плагины. Это займет какое-то время...",
+      "invoking-generators": "Вызоваем генераторы...",
+      "deps-install": "Устанавливаем дополнительные зависимости...",
+      "completion-hooks": "Запускаем завершающие хуки...",
+      "fetch-remote-preset": "Получаем удаленный preset...",
+      "done": "Проект успешно создан",
+      "plugin-install": "Устанавливаем {arg0}...",
+      "plugin-uninstall": "Удаляем {arg0}...",
+      "plugin-invoke": "Вызываем {arg0}...",
+      "plugin-update": "Обновляем {arg0}..."
+    }
+  },
+  "types": {
+    "task": {
+      "status": {
+        "idle": "Бездействие",
+        "running": "Запущен",
+        "done": "Готов",
+        "error": "Ошибка",
+        "terminated": "Отменен"
+      }
+    }
+  },
+  "views": {
+    "project-select": {
+      "title": "Менеджер проектов Vue",
+      "tabs": {
+        "projects": "Проекты",
+        "create": "Создать",
+        "import": "Импорт"
+      },
+      "buttons": {
+        "create": "Создать новый проект здесь",
+        "import": "Импортировать эту папку"
+      }
+    },
+    "project-create": {
+      "title": "Создать новый проект",
+      "tabs": {
+        "details": {
+          "title": "Подробнее",
+          "form": {
+            "folder": {
+              "label": "Папка проекта",
+              "placeholder": "my-app",
+              "tooltip": "Изменить основную папку",
+              "action": "Выбрать эту папку"
+            },
+            "manager": {
+              "label": "Менеджер пакетов",
+              "default": "По-умолчанию"
+            },
+            "options": {
+              "label": "Дополнительные опции",
+              "description": "Перезаписать целевую папку если уже существует"
+            }
+          },
+          "buttons": {
+            "cancel": "Отменить",
+            "next": "Далее"
+          },
+          "modal": {
+            "title": "Cancel and reset project creation",
+            "body": "Are you sure you want to reset the project creation?",
+            "buttons": {
+              "back": "Назад",
+              "clear": "Очистить проект"
+            }
+          }
+        },
+        "presets": {
+          "title": "Presets",
+          "description": "A preset is an association of plugins and configurations. After you've selected features, you can optionally save it as a preset so that you can reuse it for future projects, without having to reconfigure everything again.",
+          "select": "Select a preset",
+          "buttons": {
+            "previous": "Previous",
+            "next": "Далее",
+            "create": "Create Project"
+          },
+          "modal": {
+            "title": "Configure Remote preset",
+            "body": "Available soon..."
+          },
+          "manual": {
+            "name": "Manual",
+            "description": "Manually select features"
+          },
+          "remote": {
+            "name": "Remote preset",
+            "description": "Fetch a preset from a git repository"
+          },
+          "default-preset": "Default preset"
+        },
+        "features": {
+          "title": "Features",
+          "description": "You will be able to add features after the project is created by installing plugins.",
+          "enable": "Enable features",
+          "buttons": {
+            "previous": "Previous",
+            "next": "Далее",
+            "create": "Create Project"
+          },
+          "userConfigFiles": {
+            "name": "Use config files",
+            "description": "Use specific configuration files (like '.babelrc') instead of using 'package.json'."
+          }
+        },
+        "configuration": {
+          "title": "Configuration",
+          "buttons": {
+            "previous": "Previous",
+            "create": "Create Project"
+          },
+          "modal": {
+            "title": "Save as a new preset",
+            "body": {
+              "title": "Preset name",
+              "subtitle": "Save the features and configuration into a new preset"
+            },
+            "buttons": {
+              "cancel": "Отменить",
+              "continue": "Continue without saving",
+              "create": "Create a new preset"
+            }
+          }
+        }
+      }
+    },
+    "project-plugins": {
+      "title": "Project plugins",
+      "button": "Add plugin",
+      "heading": "Installed plugins"
+    },
+    "project-plugins-add": {
+      "title": "Add a plugin",
+      "plugin": "plugin",
+      "tabs": {
+        "search": {
+          "label": "Search",
+          "search-input": "Search a plugin",
+          "not-found": "No results found",
+          "buttons": {
+            "cancel": "Отменить",
+            "install": "Install {target}"
+          }
+        },
+        "configuration": {
+          "label": "Configuration",
+          "heading": "Installation of {target}",
+          "buttons": {
+            "cancel": "Отменить",
+            "finish": "Finish installation"
+          }
+        },
+        "diff": {
+          "label": "Files changed"
+        }
+      },
+      "modal": {
+        "title": "Uninstall {target}?",
+        "body": "Do you want to uninstall the {target} plugin?",
+        "buttons": {
+          "back": "Go back",
+          "cancel": "Cancel without uninstalling",
+          "uninstall": "Uninstall"
+        }
+      }
+    },
+    "project-configurations": {
+      "title": "Project configuration"
+    },
+    "project-configuration-details": {
+      "actions": {
+        "cancel": "Cancel changes",
+        "save": "Save changes",
+        "more-info": "More info"
+      }
+    },
+    "project-tasks": {
+      "title": "Project tasks"
+    },
+    "project-task-details": {
+      "actions": {
+        "play": "Run task",
+        "stop": "Stop task",
+        "close": "Закрыть"
+      },
+      "command": "Script command",
+      "parameters": "Parameters",
+      "parameters-info": "Parameters will be saved when the task is run.",
+      "more-info": "More Info",
+      "output": "Output"
+    },
+    "about": {
+      "title": "About",
+      "description": "<a href=\"https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-ui\" target=\"_blank\">@vue/cli-ui</a> is a built-in package of vue-cli which opens a full-blown UI.",
+      "quote": "Vue-cli 3.x is a complete rewrite, with a lot of new awesome features. You will be to select features like routing, Vuex or Typescript, then add and upgrade building blocks called \"vue-cli plugins\". But having so much more options also means the tool is now more complex and harder to start using. That's why we thought having a full-blown GUI would help discover the new features, search and install vue-cli plugins and unlock more possibilities overall while not being limited by a terminal interface. To sum up, vue-cli will not only allow you to bootstrap a new project easily, but it will also remain useful for ongoing work afterwards!",
+      "links": "Useful links",
+      "back": "Go back"
+    }
+  },
+  "vue-webpack": {
+    "dashboard": {
+      "title": "Dashboard",
+      "open-app": "Open app",
+      "webpack-status": {
+        "Success": "Success",
+        "Failed": "Failed",
+        "Compiling": "Compiling",
+        "Invalidated": "Invalidated",
+        "Idle": "Idle"
+      },
+      "build-status": {
+        "labels": {
+          "status": "Status",
+          "errors": "Errors",
+          "warnings": "Warnings",
+          "assets": "Assets",
+          "modules": "Modules",
+          "deps": "Dependencies"
+        }
+      },
+      "speed-stats": {
+        "title": "Speed stats"
+      },
+      "module-list": {
+        "title": "Dependencies"
+      },
+      "asset-list": {
+        "title": "Assets",
+        "size-warning": "This asset is big, consider using Code splitting to create smaller assets."
+      }
+    },
+    "analyzer": {
+      "title": "Analyzer",
+      "go-up": "Go up",
+      "go-home": "Go to home",
+      "chunk": "Chunk"
+    },
+    "sizes": {
+      "stats": "Stats",
+      "parsed": "Parsed",
+      "gzip": "Gzip",
+      "help": "<b>Stats:</b> size from webpack stats data.<br><b>Parsed:</b> size from extracted source (after minification plugins). More accurate.<br><b>Gzip:</b> size of gzipped extracted source."
+    },
+    "tasks": {
+      "serve": {
+        "description": "Compiles and hot-reloads for development",
+        "open": "Open browser on server start",
+        "mode": "Specify env mode",
+        "host": "Specify host",
+        "port": "Specify port",
+        "https": "Use HTTPS"
+      },
+      "build": {
+        "description": "Compiles and minifies for production",
+        "mode": "Specify env mode",
+        "dest": "Output directory",
+        "target": {
+          "description": "Build target",
+          "app": "Web app",
+          "lib": "Library",
+          "wc": "Web component",
+          "wc-async": "Async web component"
+        },
+        "name": "Name for library or web-component mode (default: 'name' in package.json or entry filename)",
+        "watch": "Watch for changes"
+      },
+      "inspect": {
+        "description": "Inspect the resolved webpack config",
+        "mode": "Specify env mode",
+        "verbose": "Show full function definitions in output"
+      }
+    }
+  },
+  "eslint": {
+    "config": {
+      "eslint": {
+        "description": "Error checking & Code quality",
+        "groups": {
+          "strongly-recommended": "Strongly recommended",
+          "recommended": "Recommended"
+        }
+      },
+      "eslint-extra": {
+        "description": "Extra ESLint settings",
+        "lintOnSave": {
+          "message": "Lint on save",
+          "description": "Automatically lint source files when saved"
+        }
+      }
+    },
+    "tasks": {
+      "lint": {
+        "description": "Lints and fixes files",
+        "noFix": "Do not fix errors"
+      }
+    }
+  },
+  "pwa": {
+    "config": {
+      "pwa": {
+        "description": "Progressive Web App",
+        "workboxPluginMode": {
+          "message": "Plugin mode",
+          "description": "This allows you to the choose between the two modes supported by the underlying `workbox-webpack-plugin`"
+        },
+        "name": {
+          "message": "App name",
+          "description": "App name displayed on the Splash screen and various other places. Also used as the value for the `apple-mobile-web-app-title` meta tag in the generated HTML."
+        },
+        "themeColor": {
+          "message": "Theme color",
+          "description": "Color used to theme the browser"
+        },
+        "backgroundColor": {
+          "message": "Splash background color",
+          "description": "Background color used for the app splash screen"
+        },
+        "msTileColor": {
+          "message": "Windows app tile color",
+          "description": "Color used for the app tile on Windows"
+        },
+        "appleMobileWebAppStatusBarStyle": {
+          "message": "Apple mobile status bar style",
+          "description": "Style for the web app status bar on iOS"
+        }
+      }
+    }
+  },
+  "cypress": {
+    "tasks": {
+      "test": {
+        "description": "Run e2e tests with `cypress run`",
+        "headless": "Run in headless mode without GUI",
+        "mode": "Specify the mode the dev server should run in",
+        "url": "Run e2e tests against given url instead of auto-starting dev server"
+      }
+    }
+  },
+  "nightwatch": {
+    "tasks": {
+      "test": {
+        "description": "Run e2e tests with nightwatch",
+        "url": "Run e2e tests against given url instead of auto-starting dev server"
+      }
+    }
+  }
+}
