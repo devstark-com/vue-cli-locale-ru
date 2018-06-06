@@ -28,7 +28,7 @@
       "actions": {
         "collapse-all": "Свернуть все",
         "expand-all": "Развернуть все",
-        "commit": "Commit changes",
+        "commit": "Закоммитить изменения",
         "skip": "Пропустить",
         "continue": "Продолжить",
         "refresh": "Обновить"
@@ -39,7 +39,7 @@
         "tooltips": {
           "parent-folder": "Открыть родительскую директорию",
           "edit-path": "Редактировать путь",
-          "favorite": "Добавить/убрать в избранное",
+          "favorite": "Добавить/убрать избранное",
           "favorite-folders": "Избранные папки",
           "refresh": "Обновить"
         },
@@ -108,7 +108,7 @@
       },
       "log": {
         "tooltip": "Логи<br><i>Вкл/выкл. Vue CLI логи</i>",
-        "empty": "No logs yet"
+        "empty": "Пока нет логов."
       },
       "report-bug": "Сообщить об ошибке",
       "translate": "Помочь перевести"
@@ -125,9 +125,9 @@
     "view-badge": {
       "labels": {
         "tasks": {
-          "error": "Error status",
-          "running": "Running status",
-          "done": "Done status"
+          "error": "Статус ошибки",
+          "running": "Статус запуска",
+          "done": "Статус готовности"
         }
       }
     }
@@ -198,8 +198,8 @@
             "next": "Далее"
           },
           "modal": {
-            "title": "Cancel and reset project creation",
-            "body": "Are you sure you want to reset the project creation?",
+            "title": "Отменить и сбросить создание проекта",
+            "body": "Вы уверены, что хотите отменить создание проекта?",
             "buttons": {
               "back": "Назад",
               "clear": "Очистить проект"
@@ -207,39 +207,39 @@
           }
         },
         "presets": {
-          "title": "Presets",
-          "description": "A preset is an association of plugins and configurations. After you've selected features, you can optionally save it as a preset so that you can reuse it for future projects, without having to reconfigure everything again.",
-          "select": "Select a preset",
+          "title": "Пресеты",
+          "description": "Пресет — это связка плагинов и конфигураций. После того как нужные фукции выбраны, вы можете сохранить их как пресет для повторного исполользования в будущих проектах без необходимости повторной конфигурации.",
+          "select": "Выберите пресет",
           "buttons": {
-            "previous": "Previous",
-            "next": "Далее",
-            "create": "Create Project"
+            "previous": "Предыщий",
+            "next": "Следующий",
+            "create": "Создать пресет"
           },
           "modal": {
-            "title": "Configure Remote preset",
-            "body": "Available soon..."
+            "title": "Настройка удаленного пресета",
+            "body": "В разработке..."
           },
           "manual": {
-            "name": "Manual",
-            "description": "Manually select features"
+            "name": "Вручную",
+            "description": "Выбрать функции вручную"
           },
           "remote": {
-            "name": "Remote preset",
-            "description": "Fetch a preset from a git repository"
+            "name": "Удаленный пресет",
+            "description": "Скачать пресет из git репозитория"
           },
-          "default-preset": "Default preset"
+          "default-preset": "Пресет по-умолчанию"
         },
         "features": {
-          "title": "Features",
-          "description": "You will be able to add features after the project is created by installing plugins.",
-          "enable": "Enable features",
+          "title": "Функции",
+          "description": "Вы сможете добавить функции после создания проекта устанавливая плагины.",
+          "enable": "Включить функцию",
           "buttons": {
-            "previous": "Previous",
+            "previous": "Назад",
             "next": "Далее",
             "create": "Создать проект"
           },
           "userConfigFiles": {
-            "name": "Use config files",
+            "name": "Использовать файл ",
             "description": "Use specific configuration files (like '.babelrc') instead of using 'package.json'."
           }
         },
@@ -276,7 +276,7 @@
         "search": {
           "label": "Поиск",
           "search-input": "Поиск плагина",
-          "not-found": "No results found",
+          "not-found": "Ничего не найдено",
           "buttons": {
             "cancel": "Отменить",
             "install": "Установить {target}"
@@ -284,7 +284,7 @@
         },
         "configuration": {
           "label": "Конфигурация",
-          "heading": "Installation of {target}",
+          "heading": "Установка {target}",
           "buttons": {
             "cancel": "Отменить",
             "finish": "Завершение установки"
@@ -323,15 +323,15 @@
         "stop": "Остановить задачу",
         "close": "Закрыть"
       },
-      "command": "Script command",
+      "command": "Команда скрипта",
       "parameters": "Параметры",
       "parameters-info": "Параметры будут сохранены при выполнении задачи.",
       "more-info": "Дополнительная информация",
       "output": "Вывод"
     },
     "about": {
-      "title": "About",
-      "description": "<a href=\"https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-ui\" target=\"_blank\">@vue/cli-ui</a> is a built-in package of vue-cli which opens a full-blown UI.",
+      "title": "О Vue-cli UI",
+      "description": "<a href=\"https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-ui\" target=\"_blank\">@vue/cli-ui</a> это встроенное расширение vue-cli, предоставляющее полноценный пользовательский интерфейс.",
       "quote": "Vue-cli 3.x is a complete rewrite, with a lot of new awesome features. You will be to select features like routing, Vuex or Typescript, then add and upgrade building blocks called \"vue-cli plugins\". But having so much more options also means the tool is now more complex and harder to start using. That's why we thought having a full-blown GUI would help discover the new features, search and install vue-cli plugins and unlock more possibilities overall while not being limited by a terminal interface. To sum up, vue-cli will not only allow you to bootstrap a new project easily, but it will also remain useful for ongoing work afterwards!",
       "links": "Полезные ссылки",
       "back": "Назад"
@@ -339,129 +339,129 @@
   },
   "vue-webpack": {
     "dashboard": {
-      "title": "Dashboard",
+      "title": "Панель управления",
       "open-app": "Открыть приложение",
       "webpack-status": {
         "Success": "Успешно",
         "Failed": "Неудачно",
         "Compiling": "Компиляция",
-        "Invalidated": "Invalidated",
-        "Idle": "Idle"
+        "Invalidated": "Аннулированно",
+        "Idle": "Бездействие"
       },
       "build-status": {
         "labels": {
           "status": "Статус",
           "errors": "Ошибки",
           "warnings": "Предупреждения",
-          "assets": "Assets",
+          "assets": "Ресурсы",
           "modules": "Модули",
           "deps": "Зависимости"
         }
       },
       "speed-stats": {
-        "title": "Speed stats"
+        "title": "Статистика скорости"
       },
       "module-list": {
         "title": "Зависимости"
       },
       "asset-list": {
-        "title": "Assets",
-        "size-warning": "This asset is big, consider using Code splitting to create smaller assets."
+        "title": "Ресурсы",
+        "size-warning": "Этот ресурс большой, попробуйте воспользоваться Code splitting, чтобы уменьшить размера ресурса."
       }
     },
     "analyzer": {
-      "title": "Analyzer",
-      "go-up": "Go up",
-      "go-home": "Go to home",
-      "chunk": "Chunk"
+      "title": "Аналзатор",
+      "go-up": "Наверх",
+      "go-home": "Домой",
+      "chunk": "Кусок (chunk)"
     },
     "sizes": {
       "stats": "Статистика",
-      "parsed": "Parsed",
+      "parsed": "Проанализовано",
       "gzip": "Gzip",
-      "help": "<b>Stats:</b> size from webpack stats data.<br><b>Parsed:</b> size from extracted source (after minification plugins). More accurate.<br><b>Gzip:</b> size of gzipped extracted source."
+      "help": "<b>Статистика:</b> размер из аналитики webpack.<br><b>Проанализировано:</b> размер из извлеченных исходных кодов (после минификации плагинов). Более точно.<br><b>Gzip:</b> размер извлеченных исходников сжатых gzip."
     },
     "tasks": {
       "serve": {
-        "description": "Compiles and hot-reloads for development",
-        "open": "Open browser on server start",
-        "mode": "Specify env mode",
+        "description": "Компилируется и поддерживает горячую перезагрузку для разработки.",
+        "open": "Открыть браузер после запуска",
+        "mode": "Укажите режим среды (env)",
         "host": "Укажите хост",
         "port": "Укажите порт",
         "https": "Использовать HTTPS"
       },
       "build": {
-        "description": "Compiles and minifies for production",
-        "mode": "Specify env mode",
-        "dest": "Output directory",
+        "description": "Компилируется и минифицируется для production",
+        "mode": "Укажите режим среды (env)",
+        "dest": "Результирующая директория",
         "target": {
-          "description": "Build target",
-          "app": "Web app",
-          "lib": "Library",
-          "wc": "Web component",
-          "wc-async": "Async web component"
+          "description": "Цель сборки",
+          "app": "Web приложение",
+          "lib": "Библиотека",
+          "wc": "Web компонента",
+          "wc-async": "Асинхронная web компонента"
         },
-        "name": "Name for library or web-component mode (default: 'name' in package.json or entry filename)",
-        "watch": "Watch for changes"
+        "name": "Имя библиотеки или режим web-компоненты (по-умолчанию: 'name' в package.json или название файла)",
+        "watch": "Следить за изменениями"
       },
       "inspect": {
-        "description": "Inspect the resolved webpack config",
-        "mode": "Specify env mode",
-        "verbose": "Show full function definitions in output"
+        "description": "Проинспектировать webpack конфигурацию",
+        "mode": "Укажите режим среды (env)",
+        "verbose": "Показывать подробные описания функция в результате"
       }
     }
   },
   "eslint": {
     "config": {
       "eslint": {
-        "description": "Error checking & Code quality",
+        "description": "Проверка на ошибки & качество кода",
         "groups": {
-          "strongly-recommended": "Strongly recommended",
-          "recommended": "Recommended"
+          "strongly-recommended": "Настоятельно рекомедуется",
+          "recommended": "Рекомендуется"
         }
       },
       "eslint-extra": {
-        "description": "Extra ESLint settings",
+        "description": "Дополнительные настройки ESLint",
         "lintOnSave": {
-          "message": "Lint on save",
-          "description": "Automatically lint source files when saved"
+          "message": "Проверять при сохренении",
+          "description": "Автоматически проверять исходники при сохранении"
         }
       }
     },
     "tasks": {
       "lint": {
-        "description": "Lints and fixes files",
-        "noFix": "Do not fix errors"
+        "description": "Проверяет и исправляет ошибки в файлах",
+        "noFix": "Не исправлять ошибки"
       }
     }
   },
   "pwa": {
     "config": {
       "pwa": {
-        "description": "Progressive Web App",
+        "description": "Прогрессивное Web приложение",
         "workboxPluginMode": {
-          "message": "Plugin mode",
-          "description": "This allows you to the choose between the two modes supported by the underlying `workbox-webpack-plugin`"
+          "message": "Режим плагина",
+          "description": "Это позволяет вам выбрать между двумя режимами которые поддерживаются лежащим в основе `workbox-webpack-plugin`"
         },
         "name": {
-          "message": "App name",
-          "description": "App name displayed on the Splash screen and various other places. Also used as the value for the `apple-mobile-web-app-title` meta tag in the generated HTML."
+          "message": "Название приложения",
+          "description": "Название показывается на экране загрузки и в других местах. А также используется как `apple-mobile-web-app-title` мета-тег в генерируемом HTML."
         },
         "themeColor": {
-          "message": "Theme color",
-          "description": "Color used to theme the browser"
+          "message": "Цвет темы",
+          "description": "Цвет используется для темы браузера"
         },
         "backgroundColor": {
-          "message": "Splash background color",
-          "description": "Background color used for the app splash screen"
+          "message": "Фоновый цвет экрана загрузки",
+          "description": "Фоновый цвет используется для экрана загрузки"
         },
         "msTileColor": {
-          "message": "Windows app tile color",
-          "description": "Color used for the app tile on Windows"
+          "message": "Цвет плашки Windows приложения",
+          "description": "Используется для стилизации плашки Windows приложения"
         },
         "appleMobileWebAppStatusBarStyle": {
-          "message": "Apple mobile status bar style",
-          "description": "Style for the web app status bar on iOS"
+          "message": "Стиль мобильного статус бара Apple",
+          "description": "Стиль мобильного статус бара приложения в iOS"
         }
       }
     }
@@ -469,18 +469,18 @@
   "cypress": {
     "tasks": {
       "test": {
-        "description": "Run e2e tests with `cypress run`",
-        "headless": "Run in headless mode without GUI",
-        "mode": "Specify the mode the dev server should run in",
-        "url": "Run e2e tests against given url instead of auto-starting dev server"
+        "description": "Запустить e2e тесты с `cypress run`",
+        "headless": "Запустить в headless режиме без графического интерфейса",
+        "mode": "Указать режим, в котором dev сервер должен быть запущен",
+        "url": "Запустить e2e тесты с указанным URL адресом вместо автозапуска dev сервера"
       }
     }
   },
   "nightwatch": {
     "tasks": {
       "test": {
-        "description": "Run e2e tests with nightwatch",
-        "url": "Run e2e tests against given url instead of auto-starting dev server"
+        "description": "Запустить e2e тесты в Nightwatch",
+        "url": "Запустить e2e тесты с указанным URL адресом вместо автозапуска dev сервера"
       }
     }
   }
