@@ -239,7 +239,7 @@
             "create": "Создать проект"
           },
           "userConfigFiles": {
-            "name": "Использовать файл ",
+            "name": "Использовать файл",
             "description": "Use specific configuration files (like '.babelrc') instead of using 'package.json'."
           }
         },
@@ -423,7 +423,7 @@
       "eslint-extra": {
         "description": "Дополнительные настройки ESLint",
         "lintOnSave": {
-          "message": "Проверять при сохренении",
+          "message": "Проверять при сохранении",
           "description": "Автоматически проверять исходники при сохранении"
         }
       }
